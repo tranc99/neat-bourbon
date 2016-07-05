@@ -1,0 +1,17 @@
+.row-wrapper {
+  @include row();
+
+  &:nth-child(odd) {
+    background: $row-background;
+  }
+
+  .outer-container {
+    @include outer-container;
+  }
+
+}
+
+article.teaser--top {
+  @include span-columns(8);
+  @include shift(2);
+}
