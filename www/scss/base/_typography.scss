@@ -12,12 +12,13 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: modular-scale(1);
+  font-size: $heading1-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 2px 0 $small-spacing;
 }
 
 p {
+  font-size: $article-font-size;
   margin: 0 0 $small-spacing;
 }
 
@@ -39,4 +40,17 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
+}
+
+//overrides, haha
+h1 {
+  font-family: $heading-font-family;
+  font-size: $heading1-font-size;
+  line-height: $heading-line-height;
+  margin: 2px 0px 20px;
+}
+
+p {
+  font-size: $article-font-size;
+  margin: 0 0 $small-spacing;
 }
