@@ -14,4 +14,15 @@
 article.teaser--top {
   @include span-columns(8);
   @include shift(2);
+
+  margin-top: 88px;
+  margin-bottom: 79px;
+
+  & .teaser-image {
+    //$teaser-image-size: 200px;
+    @include nsize($teaser-image-size);
+    @include retina-image("../img/chevron-teaser", $teaser-image-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
